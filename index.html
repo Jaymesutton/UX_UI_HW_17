@@ -12,7 +12,7 @@
   <title>Jayme Portfolio</title>
 <style>
   .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,28 +23,28 @@
 </head>
 
 <body>
-  <header>
-    <section class="navigation">
-      <a href="https://www.linkedin.com/in/sutharmayur" id="logo" target="_blank">Jayme Sutton</a>
+<header>
   
-      <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
-      <input type="checkbox" id="toggle-1">
-      
-      <nav>
-        <ul>
-          <li><a href="#logo"><i class="icon-home"></i>Home</a></li>
-          <li><a href="#about"><i class="icon-user"></i>About</a></li>
-          <li><a href="#portfolio"><i class="icon-thumbs-up-alt"></i>Portfolio</a></li>
-          <li><a href="#services"><i class="icon-gear"></i>Services</a></li>
-          <li><a href="#gallery"><i class="icon-picture"></i>Gallery</a></li>
-          <li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
-        </ul>
-      </nav>
-     </section>
-    </header>
-  
-  
-  
+  <!-- Navigation -->
+   <nav>
+   <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#process">Process</a>
+<!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="images/logo3.png" alt="logo" style="width: 120px;">
+  </a>
+    <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <i class="fa fa-bars"></i>
+     </a>
+   </div>
+  </nav>
+</header>
+
 <!-- hero section-->
 <section id="home">
 	<div class="hero-image">
@@ -241,17 +241,22 @@
     </div>
   </div> 
 </section> 
-<footer>
-  <ul class="social">
-    <li><a href="https://twitter.com/mayursuthar2693" target="_blank"><i class="icon-twitter"></i></a></li>
-    <li><a href="https://www.facebook.com/mayursuthar2693" target="_blank"><i class="icon-facebook"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/sutharmayur" target="_blank"><i class="icon-linkedin"></i></a></li>
-    <li><a href="https://www.pinterest.com/MayurSuthar2693/" target="_blank"><i class="icon-pinterest"></i></a></li>
-    <li><a href="https://plus.google.com/109916819421919014146/posts" target="_blank"><i class="icon-google-plus"></i></a></li>
-    <li><a href="https://www.instagram.com/mayursuthar2693/" target="_blank"><i class="icon-instagram"></i></a></li>
-  </ul>
-</footer>
+ 
+
+<script>
+  
+	function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
 
   </body>
 </html>
+
 
